@@ -1,6 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+ 
+
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="format-detection" content="telephone=no"/>
@@ -10,41 +13,6 @@
     <style type="text/css">
     sup {line-height: 0;font-size: 56%;}
     sub {line-height: 0;font-size: 60%;}
-    
-    /* Common Classes */
-    .bg-white {background-color: #ffffff !important;}
-    .bg-gray {background-color: #f7f7f7 !important;}
-    .bg-pink {background-color: #c70751 !important;}
-    .text-pink {color: #c70751 !important;}
-    .text-white {color: #ffffff !important;}
-    .text-gray {color: #585858 !important;}
-    .text-dark {color: #444 !important;}
-    .font-arial {font-family: Arial, Helvetica, sans-serif;}
-    .font-7 {font-size: 7px;}
-    .font-8 {font-size: 8px;}
-    .font-10 {font-size: 10px;}
-    .font-18 {font-size: 18px;}
-    .font-20 {font-size: 20px;}
-    .font-29 {font-size: 29px;}
-    .font-40 {font-size: 40px;}
-    .line-12 {line-height: 1.2;}
-    .line-0 {line-height: 0;}
-    .line-10 {line-height: 10px;}
-    .no-decoration {text-decoration: none !important;}
-    .underline {text-decoration: underline !important;}
-    .table-base {border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
-    .table-fixed {table-layout: fixed;}
-    .td-base {-webkit-text-size-adjust: none; border-collapse: collapse;}
-    .img-block {display: block; border: none; width: 100%; height: auto; margin: 0; padding: 0;}
-    .w-100 {width: 100% !important;}
-    .h-3 {height: 3px;}
-    .text-center {text-align: center;}
-    .text-left {text-align: left;}
-    .text-right {text-align: right;}
-    .border-pink {border: 2px solid #c70751;}
-    .inline-block {display: inline-block;}
-    .block {display: block;}
-    
     /* specific Styles */
     /* href_link_styles_start*/
     *.linkunder, .linkunder a, .linkunder a:link, .linkunder a:active, .linkunder a:hover, .linkunder a:visited {
@@ -69,6 +37,24 @@
     *.star-wrapper:hover~*.star-wrapper *.star {color: #878787 !important;}
     option,
     select {max-width: 560px;}
+
+    /* Video link styles */
+    .video-link {
+      font-size: 20px;
+      padding: 5px 10px;
+      display: inline-block;
+      background-color: #c70751;
+      border: 2px solid #c70751;
+      border-radius: 0px;
+      text-align: center;
+      line-height: 1.2;
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      text-decoration: underline;
+      color: #ffffff;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+
     /*STYLES*/
     /*Iphone STYLES  */
      @media only screen and (max-width: 480px) {
@@ -142,28 +128,71 @@
         .font20 {font-size : 20px !important;}
         .font9 {font-size : 9px !important;}
         .bor-rad {border-radius: 2px !important;}
+
+        /* Video link responsive */
+        .video-link {
+          font-size: 16px !important;
+          padding: 12px 16px !important;
+          width: 90% !important;
+          box-sizing: border-box !important;
+        }
      
+    }
+
+    /* At max 350px width (very narrow screens) */
+    @media only screen and (max-width: 350px) {
+      .video-link {
+        font-size: 14px !important;
+        padding: 6px 8px !important;
+        width: 100% !important;
+      }
+    }
+
+    /* Default: width 550px */
+    .responsive-red-line {
+      width: 550px !important;
+    }
+
+    /* When viewport is 300px or less, width 250px */
+    @media screen and (max-width: 300px) {
+      .responsive-red-line {
+        width: 250px !important;
+      }
+    }
+
+    /* When viewport is between 301px and 499px, use mid-range value */
+    @media screen and (max-width: 499px) and (min-width: 301px) {
+      .responsive-red-line {
+        width: 350px !important;
+      }
+    }
+
+    /* When viewport is 500px or more, use 550px */
+    @media screen and (min-width: 500px) {
+      .responsive-red-line {
+        width: 550px !important;
+      }
     }
   </style>
   </head>
 <body bgcolor="#ffffff" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;width:100% !important;">
-    <table width="100%" align="center" bgcolor="#f0f0f0" cellpadding="0" cellspacing="0" border="0" class="table-base w-100" style="margin:0;padding:0;line-height:100% !important">
+    <table width="100%" align="center" bgcolor="#f0f0f0" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin:0;padding:0;width:100% !important;line-height:100% !important">
         <tbody>
             <tr>
-                <td class="td-base">
-                    <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth table-base table-fixed bg-white">
+                <td style="-webkit-text-size-adjust:none;border-collapse:collapse">
+                    <table width="600" cellpadding="0" bgcolor="#ffffff" cellspacing="0" border="0" align="center" class="devicewidth" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:fixed;">
                         <tbody>
                             <tr>
-                                <td width="100%" class="td-base">
-                                    <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth table-base table-fixed bg-white">
+                                <td width="100%" style="-webkit-text-size-adjust:none;border-collapse:collapse">
+                                    <table width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth" style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:fixed;">
                                         <tbody>
-                                              <td align="center" class="td-base line-12 w-100" style="padding:40px 0 0 0; margin:0;">
-                                                <img src="images/header.png"  alt="Header Image" class="img-block" />
+                                              <td align="center" style="-webkit-text-size-adjust:none; border-collapse:collapse; padding:40px 0 0 0; line-height:1.2; width:100%; margin:0;">
+                                                <img src="images/header.png"  alt="Header Image" style="display:block; border:none; width:100%; height:auto; margin:0; padding:0;" />
                                               </td>
                                             </tr>
 
 
-                                              <td align="right" class="mobile-title td-base bg-gray font-arial font-29 text-pink line-12" style="padding:10px 0 20px 0;">
+                                              <td align="right" class="mobile-title" style="-webkit-text-size-adjust:none;border-collapse:collapse;background-color:#f7f7f7;padding:10px 0 20px 0;font-family: Arial, Helvetica, sans-serif; font-size:29px; color:#c70751; line-height:1.2;">
                                                 <b>
                                                   <span style="display:block; padding:0 40px 0 0;">Conozca paso a paso la</span>
                                                   <span style="display:block; padding:0 40px 0 0;">reconstitución de</span>
@@ -174,23 +203,23 @@
                                             </tr>
                                       
                                             <tr>
-                                              <td align="center" class="td-base line-12 w-100" style="padding:36px 0 0 0; margin:0;">
-                                                  <img src="images/reconstitucion.png" alt="Header Image" class="img-block" />
+                                              <td align="center" style="-webkit-text-size-adjust:none; border-collapse:collapse; padding:36px 0 0 0; line-height:1.2; width:100%; margin:0; padding:0;">
+                                                  <img src="images/reconstitucion.png" alt="Header Image" style="display:block; border:none; width:100%; height:auto; margin:0; padding:0;" />
                                                </td>
                                               </tr>
 
                                             <tr>
-                                              <td align="center" class="mobile-btn-padding td-base bg-gray" style="padding: 50px 116px 0 115px;">
-                                                <a href="https://players.brightcove.net/4309680634001/default_default/index.html?videoId=6365218117112" target="_blank" class="inline-block bg-pink border-pink font-arial font-20 line-12 underline" style="border-radius: 0px; padding: 5px 10px 5px 10px;">
-                                                  <b class="text-white"><span class="underline">iHaga clic para ver el video!</span></b>
+                                              <td align="center" class="mobile-btn-padding" style="-webkit-text-size-adjust:none;border-collapse:collapse;background-color: #f7f7f7; padding: 50px 116px 0 115px;">
+                                                <a class="video-link" href="https://players.brightcove.net/4309680634001/default_default/index.html?videoId=6365218117112" target="_blank">
+                                                  <span style="text-decoration:underline;">¡Haga clic para ver el video!</span>
                                                 </a>
                                               </td>
                                             </tr>
                                             <tr>
-                                                <td align="center" class="mobile-divider-padding td-base bg-gray" style="padding: 70px 30px 0 30px;">
-                                                    <table width="250" height="3" cellpadding="0" cellspacing="0" border="0" class="table-base bg-pink">
+                                                <td align="center" class="video-line-td mobile-divider-padding" style="-webkit-text-size-adjust:none;border-collapse:collapse;background-color: #f7f7f7; padding: 70px 30px 0 30px;">
+                                                    <table class="responsive-red-line" width="550" height="3" cellpadding="0" cellspacing="0" border="0" style="background-color: #c70751; border-collapse: collapse;">
                                                       <tr>
-                                                        <td class="bg-pink h-3 line-12" style="font-size: 0;">&nbsp;</td>
+                                                        <td style="background-color: #c70751; height: 3px; line-height: 1.2; font-size: 0;">&nbsp;</td>
                                                       </tr>
                                                     </table>
                                                 </td>
@@ -198,12 +227,12 @@
                                            
                                             <!-- 5 star -->
                                             <tr>
-                                                <td width="100%" class="td-base bg-gray" style="padding:20px 0 0 0;">
-                                                    <table border="0" class="devicewidth table-base table-fixed bg-gray" align="center" cellpadding="0" cellspacing="0" width="600">
+                                                <td width="100%" style="-webkit-text-size-adjust:none;border-collapse:collapse;padding:20px 0 0 0; background-color:#f7f7f7">
+                                                    <table  bgcolor="#f7f7f7" border="0" class="devicewidth" align="center" cellpadding="0" cellspacing="0" width="600" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;border-spacing: 0px;background-color: #f7f7f7;table-layout:fixed;">
                                                         <tbody>
                                                           <tr>
-                                                             <td align="center" class="td-base bg-gray" style="padding: 0 0 13px 0;">
-                                                                <span class="font-arial font-10 text-pink"><b>¿Qué tan satisfecho está con este correo electrónico?</b></span>
+                                                             <td align="center"   style="-webkit-text-size-adjust:none;border-collapse:collapse;background-color:#f7f7f7;padding: 0 0 13px 0;">
+                                                                <span style="font-family: 'Arial', 'Helvetica', sans-serif; font-size: 10px; color: #c70751;"><b>¿Qué tan satisfecho está con este correo electrónico?</b></span>
                                                               </td>
                                                           </tr>
     
@@ -214,8 +243,8 @@
                                                                         <td bgcolor="#f7f7f7" align="center" style="padding: 0;margin: 0;width: 100%;">
                                                                           <table role="presentation" bgcolor="#ffffff" style="border-spacing: 0;padding: 0;border-collapse: collapse;vertical-align: top;text-align: center;width: 100%;position: relative;display: table;">
                                                                             <tbody>
-                                                                              <tr bgcolor="#f7f7f7" style="vertical-align: top;padding: 0;" align="center">
-                                                                                <th class="pad8" bgcolor="#f7f7f7" style="width: 100%;margin: 0 auto;padding: 0px 56px 0px 60px;color: #c40558;font-family: Helvetica,Arial, sans-serif;font-weight: normal;line-height: 1.2;font-size: 14px;" align="center">
+                                                                              <tr bgcolor="#ffffff" style="vertical-align: top;padding: 10px 0;" align="center">
+                                                                                <td class="pad8" bgcolor="#ffffff" style="width: 100%;margin: 0 auto;padding: 10px 30px;color: #c40558;font-family: Helvetica,Arial, sans-serif;font-weight: normal;line-height: 1.2;font-size: 14px;" align="center">
                                                                                   <center data-parsed="" bgcolor="#f7f7f7" style="width: 100%">
                                                                                     <table align="center" cellpadding="0" cellspacing="0" bgcolor="#f7f7f7" width="100%" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse;border-spacing: 0px;table-layout:fixed;">
                                                                                       <tr>
@@ -269,14 +298,14 @@
                                             <!-- 5-star end -->
 
                                             <tr>
-                                                 <td class="td-base line-0 bg-gray" style="font-size:0;" height="30">&nbsp;</td>
+                                                 <td style="-webkit-text-size-adjust:none;border-collapse:collapse;line-height:0; background-color: #f7f7f7;font-size:0;" height="30">&nbsp;</td>
                                             </tr>
 
                                             <tr>
-                                              <td class="td-base bg-gray" style="padding:0;">
-                                                <table width="100%" cellpadding="0" cellspacing="0" border="0" class="table-base font-arial font-7 text-gray bg-gray line-12">
+                                              <td style="-webkit-text-size-adjust:none;border-collapse:collapse;padding:0 0 0 0;background-color: #f7f7f7;">
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="-webkit-text-size-adjust:none;border-collapse:collapse ;font-family:Arial, Helvetica, sans-serif; font-size: 7px; color: #585858; background: #f7f7f7;line-height: 1.2;">
                                                   <tr>
-                                                    <td valign="top" width="50%" class="mobile-footer-left text-left" style="padding: 10px 20px 10px 30px;">
+                                                    <td valign="top" width="50%" class="mobile-footer-left" style="padding: 10px 20px 10px 30px;text-align: left;">
                                                       <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                                         <tr><td style=" font-size:8px; padding-bottom: 5px;"><b>Material exclusivo para el profesional de la salud</b></td></tr>
                                                         <tr><td>La información contenida en este material está destinada únicamente al </td></tr>
@@ -285,12 +314,12 @@
                                                         <tr><td>Cualquier uso no autorizado será responsabilidad del profesional tdmédico o</td></tr>
                                                         <tr><td>cualquier tercero que tenga acceso a la misma.</td></tr>
                                                         <tr><td style="padding-top:10px;">Si tiene dudas o necesita información sobre este artículo, no dude en escribir a
-                                                          <a href="mailto:informacion.medica.mex@boehringer-ingelheim.com" class="text-dark no-decoration"><b>informacion.medica.mex@boehringer-ingelheim.com</b></a>
+                                                          <a href="mailto:informacion.medica.mex@boehringer-ingelheim.com" style="color:#444; text-decoration:none;"><b>informacion.medica.mex@boehringer-ingelheim.com</b></a>
                                                         </td></tr>
-                                                        <tr><td style="padding-top:10px;">Consulte la IPP completa en: <a href="https://boehringerclick.mx/login?status=ipp" target="_blank" class="text-dark no-decoration"><b>https://boehringerclick.mx/ipp</b></a></td></tr>
+                                                        <tr><td style="padding-top:10px;">Consulte la IPP completa en: <a href="https://boehringerclick.mx/login?status=ipp" target="_blank" style="color:#444; text-decoration:none;"><b>https://boehringerclick.mx/ipp</b></a></td></tr>
                                                       </table>
                                                     </td>
-                                                    <td valign="top" width="240" class="mobile-footer-right text-right" style="padding: 10px 45px 10px 10px;">
+                                                    <td valign="top" width="240" class="mobile-footer-right" style="padding: 10px 45px 10px 10px; text-align:right;">
                                                       <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                                         <tr><td style=" font-size:8px; padding-bottom: 5px;"><b>Boehringer Ingelheim Promeco S.A.deC.V.</b></td></tr>
                                                         <tr><td>Maíz #49 Col. Barrio Xaltocan, C.P. 16090,</td></tr>
@@ -306,8 +335,8 @@
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td align="center" class="td-base line-12 font-arial font-8 bg-gray text-gray" style="padding: 18px 0 30px 0;">
-                                                Para conocer nuestro <a href="https://www.boehringer-ingelheim.com/mx/salud-humana/aviso-de-privacidad-salud-humana" target="_blank" class="text-gray underline">AVISO DE PRIVACIDAD</a> visite nuestra página
+                                              <td align="center" style="-webkit-text-size-adjust:none;border-collapse:collapse; line-height:1.2;font-family:Arial, Helvetica,  sans-serif; font-size: 8px; background: #f7f7f7;color: #585858; padding: 18px 0 30px 0;">
+                                                Para conocer nuestro <a href="https://www.boehringer-ingelheim.com/mx/salud-humana/aviso-de-privacidad-salud-humana" target="_blank" style="color:#585858; text-decoration:underline;">AVISO DE PRIVACIDAD</a> visite nuestra página
                                               </td>
                                             </tr>
 
@@ -315,14 +344,14 @@
 
                                             <tr>
 
-                                              <td align="center" class="td-base bg-gray" style="padding: 0 0 32px 0;">
-                                                <table width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-gray">
+                                              <td align="center" style="-webkit-text-size-adjust:none;border-collapse:collapse ;padding: 0 0 32px 0; background-color: #f7f7f7;">
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background: #f7f7f7;">
                                                   <tr>
-                                                    <td align="left" class="td-base line-12 padRight12" style="padding:0 0 0 32px;">
-                                                        <a href="https://www.boehringer-ingelheim.com/mx?BIID={{Account.Id}}&cid=ae:{{OrgId}}:{{Approved_Document_vod__c.Id}}:{{EmailId}}" target="_blank"><img src="images/bi-logo.png" width="150" class="block width40" style="border:none;"></a>
+                                                    <td align="left"  style="-webkit-text-size-adjust:none;border-collapse:collapse;padding:0 0 0 32px; line-height: 1.2;" class="padRight12">
+                                                        <a href="https://www.boehringer-ingelheim.com/mx?BIID={{Account.Id}}&cid=ae:{{OrgId}}:{{Approved_Document_vod__c.Id}}:{{EmailId}}" target="_blank"><img src="images/bi-logo.png" width="150" style="display: block;border:none;" class="width40"></a>
                                                     </td>
-                                                    <td align="right" class="td-base line-12 padRight12" style="padding:0 40px 0 0;">
-                                                        <a href="" target="_blank"><img src="images/lilly-logo.png" width="150" class="block width40" style="border:none;"></a>
+                                                    <td align="right"  style="-webkit-text-size-adjust:none;border-collapse:collapse;padding:0 40px 0 0; line-height: 1.2;" class="padRight12">
+                                                        <a href="" target="_blank"><img src="images/lilly-logo.png" width="150" style="display: block;border:none;" class="width40"></a>
                                                     </td>
                                                   </tr>
                                                 </table>
